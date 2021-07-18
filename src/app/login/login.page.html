@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  <div class="center">
+    <ion-card color="light">
+      <img src="assets/icon/favicon.png" alt="Login Ionic">
+      <ion-card-title class="ion-text-center">Vídeos App</ion-card-title>
+      <ion-item lines="none" color="light">
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="light">
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+      <ion-button (click)="login()" expand="full" color="light">ENTRAR</ion-button>
+      <ion-button expand="full" color="light">REGISTRAR</ion-button>
+    </ion-card>
+  </div>
+</ion-content>
